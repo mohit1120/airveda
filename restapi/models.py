@@ -19,6 +19,10 @@ class temperature(models.Model):
     Date=models.DateTimeField(auto_now_add=True)
 
 
+    def __str__(self):
+        return self.temp
+
+
 
 class humidity(models.Model):
     uid=models.IntegerField()
